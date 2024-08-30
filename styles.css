@@ -1,0 +1,230 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f4f8;
+    color: #333;
+}
+
+header {
+    background-color: #1a237e;
+    color: white;
+    text-align: center;
+    padding: 60px 0;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffeb3b;
+}
+
+.header-content img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    animation: bounceIn 2s;
+}
+
+.header-content h1 {
+    font-size: 3em;
+    margin: 0;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.header-content p {
+    font-size: 1.2em;
+    animation: fadeIn 1.8s ease-in-out;
+}
+
+/* About Section */
+#about {
+    background-color: white;
+    padding: 60px;
+    text-align: center;
+    animation: fadeInUp 2s ease-in-out;
+}
+
+#about h2 {
+    font-size: 2.5em;
+    color: #1a237e;
+    margin-bottom: 20px;
+}
+
+#about p {
+    font-size: 1.1em;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Skills Section */
+#skills {
+    background-color: #e3f2fd;
+    padding: 60px;
+    text-align: center;
+    animation: slideIn 2s ease;
+}
+
+#skills h2 {
+    font-size: 2.5em;
+    color: #1a237e;
+    margin-bottom: 30px;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.skill {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-size: 1.2em;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+/* Projects Section */
+#projects {
+    padding: 60px;
+    background-color: white;
+    text-align: center;
+    animation: fadeIn 2s ease-in-out;
+}
+
+#projects h2 {
+    font-size: 2.5em;
+    color: #1a237e;
+    margin-bottom: 30px;
+}
+
+.project {
+    background-color: #f0f4f8;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Contact Section */
+#contact {
+    background-color: #e3f2fd;
+    padding: 60px;
+    text-align: center;
+    animation: slideInUp 2s ease;
+}
+
+#contact h2 {
+    font-size: 2.5em;
+    color: #1a237e;
+}
+
+#contact p {
+    font-size: 1.2em;
+}
+
+/* Footer */
+footer {
+    background-color: #1a237e;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 1.1em;
+}
+
+/* Animations */
+
+/* Bounce in effect */
+@keyframes bounceIn {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Fade in effect */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Fade in up effect */
+@keyframes fadeInUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Slide in effect */
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Slide in up effect */
+@keyframes slideInUp {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
